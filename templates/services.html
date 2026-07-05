@@ -1,6 +1,210 @@
-{%extends 'base.html'%}
+{% extends 'base.html' %}
 
 {% block title %}Services{% endblock %}
 
-{% block body %}this is services page
+{% block body %}
+
+<div class="container-fluid bg-light py-5">
+
+    <!-- Hero Section -->
+    <div class="container text-center mb-5">
+
+        <h1 class="display-4 fw-bold text-danger">
+            🍦 Our Premium Services
+        </h1>
+
+        <p class="lead text-muted">
+            We don't just serve ice cream—we create unforgettable moments with
+            premium quality, delicious flavors, and exceptional customer service.
+        </p>
+
+        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=1200"
+             class="img-fluid rounded shadow-lg mt-3"
+             style="max-height:420px; object-fit:cover;"
+             alt="Ice Cream Services">
+
+    </div>
+
+    <!-- Services -->
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Service 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow border-0">
+                    <img src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?w=600"
+                         class="card-img-top"
+                         height="220"
+                         style="object-fit:cover;"
+                         alt="Premium Ice Cream">
+
+                    <div class="card-body text-center">
+                        <h4>🍨 Premium Ice Cream</h4>
+                        <p>
+                            Enjoy handcrafted ice creams made with fresh milk,
+                            natural ingredients, and rich flavors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow border-0">
+                    <img src="https://images.unsplash.com/photo-1528975604071-b4dc52a2d18c?w=600"
+                         class="card-img-top"
+                         height="220"
+                         style="object-fit:cover;"
+                         alt="Home Delivery">
+
+                    <div class="card-body text-center">
+                        <h4>🚚 Fast Home Delivery</h4>
+                        <p>
+                            Get your favorite ice cream delivered fresh and
+                            chilled directly to your doorstep.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow border-0">
+                    <img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?w=600"
+                         class="card-img-top"
+                         height="220"
+                         style="object-fit:cover;"
+                         alt="Birthday Party">
+
+                    <div class="card-body text-center">
+                        <h4>🎉 Party Catering</h4>
+                        <p>
+                            Make birthdays, weddings, and corporate events extra
+                            special with our catering services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow border-0">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600"
+                         class="card-img-top"
+                         height="220"
+                         style="object-fit:cover;"
+                         alt="Ice Cream Cake">
+
+                    <div class="card-body text-center">
+                        <h4>🎂 Ice Cream Cakes</h4>
+                        <p>
+                            Celebrate every occasion with our delicious,
+                            customizable ice cream cakes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow border-0">
+                    <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=600"
+                         class="card-img-top"
+                         height="220"
+                         style="object-fit:cover;"
+                         alt="Milkshake">
+
+                    <div class="card-body text-center">
+                        <h4>🥤 Milkshakes & Sundaes</h4>
+                        <p>
+                            Treat yourself with thick milkshakes, brownies,
+                            waffles, and mouth-watering sundaes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow border-0">
+                    <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=600"
+                         class="card-img-top"
+                         height="220"
+                         style="object-fit:cover;"
+                         alt="Gift Pack">
+
+                    <div class="card-body text-center">
+                        <h4>🎁 Gift Packs</h4>
+                        <p>
+                            Surprise your loved ones with beautifully packed
+                            premium ice cream gift boxes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Why Choose Us -->
+    <div class="container mt-5">
+
+        <div class="bg-white rounded shadow p-5 text-center">
+
+            <h2 class="text-danger mb-4">
+                Why Choose Us?
+            </h2>
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <h1>🍦</h1>
+                    <h5>50+ Flavors</h5>
+                </div>
+
+                <div class="col-md-3">
+                    <h1>😊</h1>
+                    <h5>10,000+ Happy Customers</h5>
+                </div>
+
+                <div class="col-md-3">
+                    <h1>🚚</h1>
+                    <h5>Fast Delivery</h5>
+                </div>
+
+                <div class="col-md-3">
+                    <h1>⭐</h1>
+                    <h5>Premium Quality</h5>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CTA -->
+
+    <div class="container mt-5">
+
+        <div class="bg-danger text-white rounded p-5 text-center">
+
+            <h2>Ready to Taste Happiness?</h2>
+
+            <p class="lead">
+                Order your favorite ice cream today and enjoy every scoop with family and friends.
+            </p>
+
+            <a href="/contact" class="btn btn-light btn-lg mt-3">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
 {% endblock body %}

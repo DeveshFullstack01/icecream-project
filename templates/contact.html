@@ -1,8 +1,232 @@
-{%extends 'base.html'%}
+{% extends 'base.html' %}
 
 {% block title %}Contact{% endblock %}
 
 {% block body %}
 
+<div class="container-fluid bg-light py-5">
+
+    <!-- Hero Section -->
+    <div class="container text-center mb-5">
+
+        <h1 class="display-4 fw-bold text-danger">
+            🍦 Contact Ice Cream Paradise
+        </h1>
+
+        <p class="lead">
+            We'd love to hear from you! Whether you have a question about our flavors,
+            catering services, or simply want to say hello.
+        </p>
+
+        <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=1200"
+             class="img-fluid rounded-4 shadow-lg mt-3"
+             style="height:350px;width:100%;object-fit:cover;"
+             alt="Ice Cream">
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Contact Form -->
+
+            <div class="col-lg-7 mb-4">
+
+                <div class="card shadow-lg border-0 rounded-4">
+
+                    <div class="card-body p-4">
+
+                        <h2 class="text-primary mb-4">
+                            📩 Send us a Message
+                        </h2>
+
+                        <form method="POST" action="/contact/">
+
+                            {% csrf_token %}
+
+                            <div class="mb-3">
+
+                                <label class="form-label fw-bold">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="name"
+                                    placeholder="Enter your full name"
+                                    required>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label fw-bold">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    required>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label fw-bold">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="phone"
+                                    placeholder="Enter your phone number"
+                                    required>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label class="form-label fw-bold">
+                                    Subject
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="subject"
+                                    placeholder="Enter subject"
+                                    required>
+
+                            </div>
+
+                            <div class="mb-4">
+
+                                <label class="form-label fw-bold">
+                                    Message
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Write your message here..."
+                                    required></textarea>
+
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="btn btn-danger btn-lg w-100 rounded-pill">
+
+                                🍨 Send Message
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Contact Information -->
+
+            <div class="col-lg-5">
+
+                <div class="card shadow-lg border-0 rounded-4 mb-4">
+
+                    <div class="card-body">
+
+                        <h2 class="text-success mb-4">
+                            📍 Contact Information
+                        </h2>
+
+                        <p>
+                            <strong>Address</strong><br>
+                            123 Ice Cream Street,<br>
+                            Mumbai, Maharashtra,<br>
+                            India
+                        </p>
+
+                        <hr>
+
+                        <p>
+                            <strong>Phone</strong><br>
+                            +91 9876543210
+                        </p>
+
+                        <hr>
+
+                        <p>
+                            <strong>Email</strong><br>
+                            info@icecreamparadise.com
+                        </p>
+
+                        <hr>
+
+                        <p>
+                            <strong>Opening Hours</strong><br>
+                            Monday - Sunday<br>
+                            10:00 AM – 10:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Social -->
+
+                <div class="card shadow-lg border-0 rounded-4">
+
+                    <div class="card-body text-center">
+
+                        <h3 class="mb-4">
+                            Follow Us
+                        </h3>
+
+                        <a href="#" class="btn btn-primary m-1">
+                            Facebook
+                        </a>
+
+                        <a href="#" class="btn btn-info text-white m-1">
+                            Twitter
+                        </a>
+
+                        <a href="#" class="btn btn-danger m-1">
+                            Instagram
+                        </a>
+
+                        <a href="#" class="btn btn-dark m-1">
+                            YouTube
+                        </a>
+
+                        <hr>
+
+                        <a href="https://maps.google.com"
+                           target="_blank"
+                           class="btn btn-success w-100">
+
+                            📍 View on Google Maps
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 {% endblock body %}

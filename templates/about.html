@@ -1,6 +1,277 @@
-{%extends 'base.html'%}
+{% extends 'base.html' %}
 
 {% block title %}About{% endblock %}
 
-{% block body %}this is about body page
+{% block body %}
+
+<div class="container-fluid bg-light py-5">
+
+    <!-- Hero Section -->
+    <div class="container text-center mb-5">
+
+        <h1 class="display-4 fw-bold text-danger">
+            🍦 About Ice Cream Paradise
+        </h1>
+
+        <p class="lead text-muted">
+            Bringing smiles with every scoop since 2020. We believe that every
+            ice cream should be a memorable experience.
+        </p>
+
+        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=1200"
+             class="img-fluid rounded shadow-lg mt-3"
+             style="max-height:420px; object-fit:cover;"
+             alt="Ice Cream Shop">
+
+    </div>
+
+    <!-- Our Story -->
+
+    <div class="container mb-5">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=800"
+                     class="img-fluid rounded shadow"
+                     alt="Our Story">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <h2 class="text-danger mb-3">📖 Our Story</h2>
+
+                <p class="lead">
+                    Ice Cream Paradise started with one simple mission:
+                    to create the happiest place for dessert lovers.
+                </p>
+
+                <p>
+                    Every scoop is prepared using fresh milk, premium ingredients,
+                    and carefully selected flavors. Whether it's classic vanilla,
+                    rich chocolate, or seasonal fruit specials, we ensure every
+                    customer enjoys the perfect treat.
+                </p>
+
+                <p>
+                    Today, we proudly serve thousands of happy customers and continue
+                    to innovate with exciting new flavors and desserts.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Why Choose Us -->
+
+    <div class="container mb-5">
+
+        <h2 class="text-center text-danger mb-5">
+            Why Choose Us?
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card shadow h-100 border-0 text-center">
+                    <div class="card-body">
+                        <h1>🍨</h1>
+                        <h4>Premium Quality</h4>
+                        <p>
+                            Made using fresh milk and the finest ingredients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card shadow h-100 border-0 text-center">
+                    <div class="card-body">
+                        <h1>🌿</h1>
+                        <h4>Fresh Ingredients</h4>
+                        <p>
+                            Natural flavors with no compromise on quality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card shadow h-100 border-0 text-center">
+                    <div class="card-body">
+                        <h1>🚚</h1>
+                        <h4>Fast Delivery</h4>
+                        <p>
+                            Freshly packed and delivered to your doorstep.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card shadow h-100 border-0 text-center">
+                    <div class="card-body">
+                        <h1>😊</h1>
+                        <h4>Happy Customers</h4>
+                        <p>
+                            Thousands of satisfied customers across the city.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Meet Our Team -->
+
+    <div class="container mb-5">
+
+        <h2 class="text-center text-danger mb-5">
+            👨‍🍳 Meet Our Team
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card shadow border-0 text-center">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500"
+                         class="card-img-top"
+                         height="300"
+                         style="object-fit:cover;"
+                         alt="Founder">
+
+                    <div class="card-body">
+                        <h4>Rahul Sharma</h4>
+                        <p class="text-muted">Founder & Ice Cream Expert</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow border-0 text-center">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500"
+                         class="card-img-top"
+                         height="300"
+                         style="object-fit:cover;"
+                         alt="Chef">
+
+                    <div class="card-body">
+                        <h4>Priya Patel</h4>
+                        <p class="text-muted">Head Dessert Chef</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow border-0 text-center">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500"
+                         class="card-img-top"
+                         height="300"
+                         style="object-fit:cover;"
+                         alt="Manager">
+
+                    <div class="card-body">
+                        <h4>Amit Verma</h4>
+                        <p class="text-muted">Store Manager</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Statistics -->
+
+    <div class="container mb-5">
+
+        <div class="row text-center">
+
+            <div class="col-md-3 mb-3">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+                        <h1 class="text-danger">50+</h1>
+                        <p>Ice Cream Flavors</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+                        <h1 class="text-danger">10K+</h1>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+                        <h1 class="text-danger">500+</h1>
+                        <p>Events Catered</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+                        <h1 class="text-danger">5★</h1>
+                        <p>Customer Rating</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Customer Promise -->
+
+    <div class="container mb-5">
+
+        <div class="bg-white shadow rounded p-5 text-center">
+
+            <h2 class="text-danger mb-4">
+                ❤️ Our Promise
+            </h2>
+
+            <p class="lead">
+                We promise to serve fresh, delicious, and premium-quality ice cream
+                while providing exceptional customer service that keeps you coming back.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- CTA -->
+
+    <div class="container mb-5">
+
+        <div class="bg-danger text-white rounded p-5 text-center">
+
+            <h2>Come Taste the Difference!</h2>
+
+            <p class="lead">
+                Visit our store today or order online to enjoy your favorite flavors.
+            </p>
+
+            <a href="/contact" class="btn btn-light btn-lg">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
 {% endblock body %} 
